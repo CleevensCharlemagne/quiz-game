@@ -8,7 +8,7 @@
   </head>
   <body>
     <section class="container">
-      <section class="screen" id="start-screen">
+      <section class="screen active" id="start-screen">
         <h1>Quiz Time!</h1>
         <p>You think you are smart.</p>
         <button id="start-btn">Start Quiz</button>
@@ -19,20 +19,21 @@
           <h2 id="question-text">Question goes here.</h2>
           <article class="quiz-info">
             <p>
-              Question <span id="current-question">1</span> of <span>5</span>
+              Question <span id="current-question">1</span> of
+              <span id="total-questions">5</span>
             </p>
             <p>score: <span id="score">0</span></p>
           </article>
         </article>
 
-        <article class="answer-container" id="answer-container"></article>
+        <article class="answers-container" id="answers-container"></article>
 
         <article class="progress-bar">
           <article id="progress" class="progress"></article>
         </article>
       </section>
 
-      <section id="result-screen" class="screen active">
+      <section id="result-screen" class="screen">
         <h1>Quiz Results</h1>
         <article class="result-info">
           <p>
@@ -42,8 +43,9 @@
 
           <article id="result-message">Good Job!</article>
         </article>
-        <button class="restart-btn">Restart Quiz</button>
+        <button id="restart-btn">Restart Quiz</button>
       </section>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

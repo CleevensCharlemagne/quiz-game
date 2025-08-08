@@ -67,7 +67,7 @@ body{
     margin-bottom: 10px;
 }
 
-.answer-container{
+.answers-container{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -88,6 +88,12 @@ body{
     background-color: #3271a5;
     border-color: #46a2da;
 
+}
+
+.answer-btn.correct{
+    background-color: #e6fff0;
+    border-color: #a3f0c4;
+    counter-reset: #28a745;
 }
 
 .answer-btn.correct{
